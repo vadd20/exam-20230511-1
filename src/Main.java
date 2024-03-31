@@ -16,6 +16,6 @@ public class Main {
         DataLoader dataLoader = new DataLoader();
         BrewingProcessor brewingProcessor = new BrewingProcessor();
         DataWriter dataWriter = new DataWriter();
-        dataWriter.writeResult(brewingProcessor.getDateToEmployees(dataLoader.readBrewings()));
+        dataWriter.writeResult(brewingProcessor.getDateToNamesToMistakeNumber(dataLoader.readBrewings()));
     }
 }

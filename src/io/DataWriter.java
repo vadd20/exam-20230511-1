@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * todo vpodogov
+ * Запись результата в файл.
  *
  * @author Vadim Podogov
  * @since 2024.03.31

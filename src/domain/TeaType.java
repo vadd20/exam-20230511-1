@@ -1,7 +1,7 @@
 package domain;
 
 /**
- * todo vpodogov
+ * Тип чая.
  *
  * @author Vadim Podogov
  * @since 2024.03.31
@@ -25,10 +25,6 @@ public class TeaType {
 
     public long getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getTimeFrom() {

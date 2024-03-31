@@ -9,22 +9,22 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * todo vpodogov
+ * Обработка данных из файла.
  *
  * @author Vadim Podogov
  * @since 2024.03.31
  */
 public class BrewingProcessor {
 
-    public Map<String, Map<String, Long>> getDateToEmployees(List<TeaBrewing> brewingList) {
+    public Map<String, Map<String, Long>> getDateToNamesToMistakeNumber(List<TeaBrewing> brewingList) {
 
         Map<String, Map<String, Long>> dateToNamesToMistakes = brewingList.stream()
                 .filter(TeaBrewing::isMistake)
                 .collect(Collectors.groupingBy(b -> b.getBrewingStart().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
-                                Collectors.groupingBy(
-                                        TeaBrewing::getName,
-                                        Collectors.counting()
-                                )
+                        Collectors.groupingBy(
+                                TeaBrewing::getName,
+                                Collectors.counting()
+                        )
                 ));
 
         return dateToNamesToMistakes.entrySet().stream()

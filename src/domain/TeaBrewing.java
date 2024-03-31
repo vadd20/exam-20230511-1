@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
- * todo vpodogov
+ * Запись о заварке чая.
  *
  * @author Vadim Podogov
  * @since 2024.03.31
@@ -46,25 +46,4 @@ public class TeaBrewing {
     public String getName() {
         return name;
     }
-
-    public Tea getTea() {
-        return tea;
-    }
-
-    public LocalDateTime getBrewingEnd() {
-        return brewingEnd;
-    }
-
-    public int getTemperature() {
-        return temperature;
-    }
-
-    public DateTimeFormatter getFormatter() {
-        return formatter;
-    }
-
-    public Long getDuration() {
-        return duration;
-    }
-
 }
